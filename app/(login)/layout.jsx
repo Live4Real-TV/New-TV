@@ -20,7 +20,7 @@ const inter = Inter({
 
 export const metadata = {
   title: "NewTV - 新影视",
-  description: "请输入密码以访问 NextTV",
+  description: "请输入密码以访问 NewTV",
 };
 
 export default function RootLayout({ children }) {

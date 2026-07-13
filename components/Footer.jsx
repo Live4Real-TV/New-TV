@@ -57,13 +57,6 @@ export function Footer() {
           >
             打赏作者
           </Link> 
-          <Image
-              src="https://i.hd-r.cn/22b80eef-dd6e-43fa-9afc-9bb2333f3305.png"
-              width={60}
-              height={60}
-              className="object-contain"
-            />
-
         </div>
       </div>
     </footer>

@@ -132,7 +132,7 @@ export function Navbar() {
         >
           <div className="relative group-hover:scale-105 transition-transform duration-200">
             <Image
-              src="https://cdn.jumpshare.com/preview/REmRK83NsvM2CakqK7PSC6WM86Bx3g5YFs48nQ6IQpWS8sFFa8yqPEtUwlWgTagbnLDvtdzyjtKmyfKMv48F0GQTopmZDKeHrjJYIl0lgA2qeqxzrN8yBNcQUOxw9UXD"
+              src="https://i.hd-r.cn/ccbba27f-b9e8-444f-ba64-3b3e6f22953a.png"
               alt="NewTV"
               width={24}
               height={24}
@@ -156,7 +156,7 @@ export function Navbar() {
 
         <div className="flex items-center gap-3">
           <Link
-            href="https://github.com/SeqCrafter/NextTV"
+            href="https://github.com/Live4Real-TV/New-TV.git"
             target="_blank"
             rel="noopener noreferrer"
             aria-label="GitHub"

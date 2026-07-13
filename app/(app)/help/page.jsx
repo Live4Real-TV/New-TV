@@ -254,18 +254,40 @@ export default function HelpPage() {
 
       {/* Footer CTA */}
       <div className="text-center mt-14 mb-8 p-8 bg-white border border-gray-100 rounded-2xl">
-        <p className="text-gray-600 mb-4">有您的支持才能转化为动力。感谢您的认可，点击打赏作者扫描二维码。</p>
-        <div className="flex justify-center gap-4 flex-wrap">
-          <a href="https://i.hd-r.cn/22b80eef-dd6e-43fa-9afc-9bb2333f3305.png" className="px-5 py-2.5 text-sm font-medium text-gray-700 bg-white border border-gray-200 rounded-lg hover:bg-gray-50 transition-colors">
-            打赏作者
-          </a>
-        </div>
         <div className="flex justify-center gap-4 flex-wrap">
           <a href="mailto:live4real2018@gmail.com" className="px-5 py-2.5 text-sm font-medium text-gray-700 bg-white border border-gray-200 rounded-lg hover:bg-gray-50 transition-colors">
             联系作者
           </a>
         </div>
       </div>
+
+
+
+      <div className="bg-white border border-gray-100 rounded-2xl p-6 md:p-8 space-y-6 text-center">
+      {/* 文本部分 */}
+      <p className="text-gray-600 mb-4">
+        有您的支持才能转化为动力。感谢您的认可，点击下方二维码打赏作者。
+      </p>
+
+      {/* 图片部分：移除 w-7 h-7，使用合适的尺寸，并添加居中样式 */}
+      <div className="flex justify-center">
+        <Image
+          src="https://i.hd-r.cn/ccbba27f-b9e8-444f-ba64-3b3e6f22953a.png"
+          alt="打赏二维码"
+          width={200} // 建议增大尺寸以便扫描
+          height={200}
+          className="rounded-lg shadow-sm hover:shadow-md transition-shadow duration-300"
+          priority={false} // 根据是否首屏加载决定
+        />
+      </div>
+      
+      {/* 可选：添加提示文字 */}
+      <p className="text-xs text-gray-400 mt-2">
+        微信扫码 
+      </p>
+    </div>
+
+
     </div>
   );
 }

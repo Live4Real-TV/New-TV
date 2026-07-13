@@ -25,7 +25,7 @@ const nextConfig = {
       },
       {
         protocol: "https",
-        hostname: "cdn.jumpshare.com",
+        hostname: "i.hd-r.cn",
       },
       {
         protocol: "https",

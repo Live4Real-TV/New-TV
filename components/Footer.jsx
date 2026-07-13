@@ -8,7 +8,7 @@ export function Footer() {
         <div className="flex items-start gap-4 max-w-md">
           <div className="flex size-12 shrink-0 items-center justify-center rounded-2xl border border-gray-200 bg-white shadow-sm">
             <Image
-              src="https://cdn.jumpshare.com/preview/REmRK83NsvM2CakqK7PSC6WM86Bx3g5YFs48nQ6IQpWS8sFFa8yqPEtUwlWgTagbnLDvtdzyjtKmyfKMv48F0GQTopmZDKeHrjJYIl0lgA2qeqxzrN8yBNcQUOxw9UXD"
+              src="https://i.hd-r.cn/ccbba27f-b9e8-444f-ba64-3b3e6f22953a.png"
               alt="NewTV"
               width={28}
               height={28}
@@ -27,7 +27,7 @@ export function Footer() {
             <div className="flex flex-wrap items-center gap-x-3 gap-y-1 text-xs font-medium text-gray-400">
               <span>© 2026 NewTV</span>
               <span className="hidden sm:inline text-gray-300">•</span>
-              <span>Open Source Project</span>
+              <span>开源项目</span>
             </div>
           </div>
         </div>
@@ -51,6 +51,12 @@ export function Footer() {
           >
             帮助中心
           </Link>
+          <Link
+            className="text-sm font-medium text-gray-500 hover:text-primary transition-colors"
+            href="https://i.hd-r.cn/22b80eef-dd6e-43fa-9afc-9bb2333f3305.png"
+          >
+            打赏作者
+          </Link> 
         </div>
       </div>
     </footer>

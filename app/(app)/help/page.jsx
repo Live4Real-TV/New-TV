@@ -253,19 +253,29 @@ export default function HelpPage() {
       </div>
 
       {/* Footer CTA */}
+      
+      {/* 【新增】直接展示二维码图片 */}
+       {/* 【关键】img 标签必须独立，绝对不能放在 <a> 标签里面！ */}
+      <div className="flex justify-center mb-6">
+        <img 
+          src="https://i.hd-r.cn/22b80eef-dd6e-43fa-9afc-9bb2333f3305.png" 
+          alt="打赏作者二维码" 
+          // 1. 尺寸稍微调大一点 (w-52 = 208px)，微信识别引擎对太小的图片不敏感
+          // 2. 确保没有 select-none 或 pointer-events-none 类
+          className="w-52 h-52 object-contain" 
+          
+          // 3. 【双保险】添加内联样式，强制允许触摸和选中，防止全局 CSS 干扰
+          style={{ 
+            WebkitTouchCallout: 'default', // iOS Safari/微信 允许呼出系统菜单
+            WebkitUserSelect: 'auto',      // 允许选中
+            userSelect: 'auto'             // 允许选中
+          }}
+        />
+      </div>
+
       <div className="text-center mt-14 mb-8 p-8 bg-white border border-gray-100 rounded-2xl">
-      <div className="relative hover:scale-105 transition-transform duration-200 inline-block">
-      <p className="text-gray-600 mb-4">有您的支持才能转化为动力。感谢您的认可，扫描二维码打赏作者。</p>
-       <Image
-          src="/cash.png"
-          alt="打赏"
-          width={140}
-          height={140}
-          className="w-[140px] h-[140px] object-contain" /* 显式指定 CSS 尺寸 */
-        /> 
-        </div>
-   
-        </div>
+        <p className="text-gray-600 mb-4">有您的支持才能转化为动力。感谢您的认可，扫描二维码打赏作者。</p>
+        
         <div className="flex justify-center gap-4 flex-wrap">
           <a href="mailto:live4real2018@gmail.com" className="px-5 py-2.5 text-sm font-medium text-gray-700 bg-white border border-gray-200 rounded-lg hover:bg-gray-50 transition-colors">
             联系作者

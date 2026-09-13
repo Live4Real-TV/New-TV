@@ -130,15 +130,13 @@ export function Navbar() {
           className="flex items-center content-center gap-3 cursor-pointer select-none group"
           onClick={() => router.push("/")}
         >
-          <div className="relative group-hover:scale-105 transition-transform duration-200">
-            <Image
-              src="https://i.hd-r.cn/ccbba27f-b9e8-444f-ba64-3b3e6f22953a.png"
-              alt="NewTV"
-              width={24}
-              height={24}
-              className="w-6 h-6 object-contain"
-            />
-          </div>
+
+
+
+
+
+
+          
           <div className="flex flex-col justify-center h-full">
             <h1 className="text-xl font-extrabold leading-none tracking-tight">
               <span className="text-gray-900">New</span>

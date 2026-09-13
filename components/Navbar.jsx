@@ -6,7 +6,7 @@ import { usePlayHistoryStore } from "@/store/usePlayHistoryStore";
 import { useFavoritesStore } from "@/store/useFavoritesStore";
 import { useSearchScrollStore } from "@/store/useSearchScrollStore";
 import { formatTimeShort } from "@/lib/util";
-import Image from "next/image";
+
 import Link from "next/link";
 import {
   MaterialSymbolsHistoryRounded,
